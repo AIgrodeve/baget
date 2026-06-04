@@ -98,3 +98,157 @@
       background: var(--primary-soft);
       color: #0d47a1;
       font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.95em;
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .meta strong {
+      color: #ffffff;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--primary);
+      border-radius: 10px;
+      background: var(--primary-soft);
+      color: #17365d;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0 36px;
+      }
+
+      .hero,
+      section {
+        padding: 20px;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>Baget Gizlilik Politikası</h1>
+      <p>Son güncelleme: 4 Haziran 2026</p>
+      <div class="meta" aria-label="Uygulama ve iletişim bilgileri">
+        <div><strong>Uygulama adı:</strong> Baget</div>
+        <div><strong>Paket adı:</strong> <code>com.baget.app</code></div>
+        <div><strong>Geliştirici:</strong> AIgrodeve</div>
+        <div><strong>İletişim:</strong> <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Genel Bilgilendirme</h2>
+      <p>Bu gizlilik politikası, Baget mobil uygulamasının kullanıcı verilerini nasıl işlediğini açıklar. Baget, gelir-gider takibi, bütçe hedefleri, son ödeme tarihi hatırlatmaları ve isteğe bağlı Google Drive yedekleme özellikleri sunar.</p>
+    </section>
+
+    <section>
+      <h2>Topladığımız ve İşlediğimiz Veriler</h2>
+      <p>Baget, gelir-gider takibi için kullanıcının uygulama içine girdiği finansal kayıtları varsayılan olarak cihaz üzerinde saklar.</p>
+      <p>İşlenebilecek veriler şunlardır:</p>
+      <ul>
+        <li>Profil adı ve isteğe bağlı profil fotoğrafı</li>
+        <li>Gelir ve gider kayıtları</li>
+        <li>Kategori, tutar, açıklama, tarih ve son ödeme tarihi bilgileri</li>
+        <li>Bütçe hedefleri ve kategori limitleri</li>
+        <li>Tema, bildirim ve güvenlik tercihleri</li>
+        <li>Kullanıcı etkinleştirirse PIN ayarı</li>
+      </ul>
+      <p>Bu veriler varsayılan olarak cihazda yerel olarak saklanır. AIgrodeve, kullanıcının yerel finans kayıtlarını kendi sunucularında toplamaz.</p>
+    </section>
+
+    <section>
+      <h2>Google Drive Yedekleme</h2>
+      <p>Premium kullanıcılar isterse Google hesabıyla oturum açarak verilerini kendi Google Drive hesaplarına yedekleyebilir.</p>
+      <p>Bu özellik kullanıldığında:</p>
+      <ul>
+        <li>Google hesabı adı veya e-posta bilgisi yalnızca oturum durumunu göstermek ve yedekleme işlemini yürütmek için kullanılır.</li>
+        <li>Yedek dosyası kullanıcının Google Drive hesabındaki <code>Baget</code> klasörüne kaydedilir.</li>
+        <li>Her Baget profili için ayrı yedek dosyası oluşturulur.</li>
+        <li>Baget yalnızca uygulama tarafından oluşturulan veya yönetilen Drive dosyalarına erişim ister.</li>
+        <li>Yedekler kullanıcının kendi Google Drive hesabında saklanır ve Google'ın hizmet şartları/gizlilik politikası kapsamında işlenebilir.</li>
+      </ul>
+      <p>Google Drive yedekleme isteğe bağlıdır. Kullanıcı yedek dosyalarını Google Drive üzerinden silebilir.</p>
+    </section>
+
+    <section>
+      <h2>Reklamlar</h2>
+      <p>Ücretsiz sürümde Google AdMob reklamları gösterilir. Google AdMob; reklam göstermek, reklam performansını ölçmek, sahtekarlığı ve kötüye kullanımı önlemek için cihaz bilgileri, reklam tanımlayıcıları, kullanım verileri ve benzeri teknik verileri işleyebilir.</p>
+      <p>Premium satın alındığında uygulama içi reklamlar kaldırılır.</p>
+    </section>
+
+    <section>
+      <h2>Satın Alma İşlemleri</h2>
+      <p>Premium tek seferlik satın alma işlemleri Google Play Billing üzerinden yürütülür. Baget ödeme kartı bilgilerini toplamaz veya saklamaz. Satın alma durumu, Premium özellikleri etkinleştirmek ve satın alımı geri yüklemek için kullanılır.</p>
+    </section>
+
+    <section>
+      <h2>Bildirimler</h2>
+      <p>Baget, kullanıcı izin verirse aşağıdaki bildirimleri gönderebilir:</p>
+      <ul>
+        <li>Son ödeme tarihi hatırlatmaları</li>
+        <li>Uygulamayı Google Play üzerinde puanlama hatırlatmaları</li>
+      </ul>
+      <p>Bildirimler uygulama işlevleri ve kullanıcı hatırlatmaları için kullanılır.</p>
+    </section>
+
+    <section>
+      <h2>Verilerin Paylaşılması</h2>
+      <p>Baget, kullanıcının yerel finans kayıtlarını üçüncü taraflara satmaz.</p>
+      <p>Ancak aşağıdaki üçüncü taraf hizmetleri kullanılabilir:</p>
+      <ul>
+        <li>Google AdMob: ücretsiz sürümde reklam göstermek için</li>
+        <li>Google Play Billing: Premium satın alma işlemleri için</li>
+        <li>Google Sign-In ve Google Drive: kullanıcı isteğe bağlı yedekleme kullanırsa</li>
+      </ul>
+      <p>Bu hizmetlerin kendi veri işleme uygulamaları olabilir.</p>
+    </section>
+
+    <section>
+      <h2>Veri Saklama ve Silme</h2>
+      <p>Kullanıcı uygulama içindeki profilleri ve kayıtları silebilir. Uygulama cihazdan kaldırıldığında yerel uygulama verileri cihazdan silinir.</p>
+      <p>Google Drive yedekleri kullanıcının kendi Drive hesabında saklanır. Kullanıcı bu dosyaları Google Drive üzerinden silebilir.</p>
+    </section>
+
+    <section>
+      <h2>Güvenlik</h2>
+      <p>Baget verileri cihaz üzerinde saklar. Kullanıcı isterse PIN kilidi etkinleştirebilir. Google Drive yedekleme için Google hesabı yetkilendirmesi kullanılır. Google servisleriyle yapılan bağlantılar ilgili SDK'lar üzerinden güvenli bağlantılarla yürütülür.</p>
+    </section>
+
+    <section>
+      <h2>Çocukların Gizliliği</h2>
+      <p>Baget çocuklara yönelik bir uygulama olarak tasarlanmamıştır.</p>
+    </section>
+
+    <section>
+      <h2>Değişiklikler</h2>
+      <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama veya mağaza sayfası üzerinden duyurulabilir.</p>
+      <p class="note">Gizlilik politikası hakkında sorularınız için <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a> adresinden AIgrodeve ile iletişime geçebilirsiniz.</p>
+    </section>
+
+    <footer>
+      © 2026 AIgrodeve. Baget mobil uygulaması gizlilik politikası.
+    </footer>
+  </main>
+</body>
+</html>
