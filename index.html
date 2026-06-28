@@ -3,18 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
   <title>Baget Gizlilik Politikası</title>
   <style>
     :root {
       color-scheme: light;
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --text: #182230;
-      --muted: #526173;
-      --line: #d9e2ef;
-      --primary: #1565c0;
-      --primary-soft: #e8f1fc;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --background: #ffffff;
+      --surface: #f8fafc;
     }
 
     * {
@@ -23,9 +21,9 @@
 
     body {
       margin: 0;
-      background: var(--bg);
+      background: var(--background);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.65;
     }
 
@@ -35,56 +33,32 @@
       padding: 40px 0 56px;
     }
 
-    .hero {
-      padding: 32px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #0d1b2a, #1565c0);
-      color: #ffffff;
-      box-shadow: 0 18px 40px rgba(13, 27, 42, 0.18);
-    }
-
-    .hero p {
-      margin: 8px 0 0;
-      color: rgba(255, 255, 255, 0.78);
+    header {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+      padding-bottom: 20px;
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(30px, 5vw, 46px);
-      line-height: 1.12;
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: 0;
     }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
+      margin: 32px 0 12px;
+      font-size: 1.35rem;
       line-height: 1.3;
-      color: var(--text);
+      letter-spacing: 0;
     }
 
     p {
       margin: 0 0 14px;
     }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin-top: 18px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--card);
-    }
-
     ul {
-      margin: 10px 0 0;
+      margin: 0 0 16px;
       padding-left: 22px;
     }
 
@@ -92,163 +66,118 @@
       margin: 6px 0;
     }
 
-    code {
-      padding: 2px 6px;
-      border-radius: 6px;
-      background: var(--primary-soft);
-      color: #0d47a1;
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-      font-size: 0.95em;
-    }
-
     .meta {
-      display: grid;
-      gap: 8px;
-      margin-top: 18px;
-      padding: 18px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.12);
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .meta strong {
-      color: #ffffff;
-    }
-
-    .note {
-      padding: 14px 16px;
-      border-left: 4px solid var(--primary);
-      border-radius: 10px;
-      background: var(--primary-soft);
-      color: #17365d;
-    }
-
-    footer {
-      margin-top: 24px;
       color: var(--muted);
-      font-size: 14px;
-      text-align: center;
+      margin: 0;
     }
 
-    @media (max-width: 640px) {
-      main {
-        width: min(100% - 20px, 920px);
-        padding: 20px 0 36px;
-      }
+    .info {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
 
-      .hero,
-      section {
-        padding: 20px;
-        border-radius: 12px;
-      }
+    .info p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
     }
   </style>
 </head>
 <body>
   <main>
-    <header class="hero">
+    <header>
       <h1>Baget Gizlilik Politikası</h1>
-      <p>Son güncelleme: 4 Haziran 2026</p>
-      <div class="meta" aria-label="Uygulama ve iletişim bilgileri">
-        <div><strong>Uygulama adı:</strong> Baget</div>
-        <div><strong>Paket adı:</strong> <code>com.baget.app</code></div>
-        <div><strong>Geliştirici:</strong> AIgrodeve</div>
-        <div><strong>İletişim:</strong> <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a></div>
-      </div>
+      <p class="meta">Son güncelleme: 28 Haziran 2026</p>
     </header>
 
-    <section>
-      <h2>Genel Bilgilendirme</h2>
-      <p>Bu gizlilik politikası, Baget mobil uygulamasının kullanıcı verilerini nasıl işlediğini açıklar. Baget, gelir-gider takibi, bütçe hedefleri, son ödeme tarihi hatırlatmaları ve isteğe bağlı Google Drive yedekleme özellikleri sunar.</p>
-    </section>
+    <p>Bu gizlilik politikası, Baget mobil uygulamasının hangi verileri işlediğini, bu verileri hangi amaçlarla kullandığını ve kullanıcıların hangi haklara sahip olduğunu açıklar.</p>
 
-    <section>
-      <h2>Topladığımız ve İşlediğimiz Veriler</h2>
-      <p>Baget, gelir-gider takibi için kullanıcının uygulama içine girdiği finansal kayıtları varsayılan olarak cihaz üzerinde saklar.</p>
-      <p>İşlenebilecek veriler şunlardır:</p>
-      <ul>
-        <li>Profil adı ve isteğe bağlı profil fotoğrafı</li>
-        <li>Gelir ve gider kayıtları</li>
-        <li>Kategori, tutar, açıklama, tarih ve son ödeme tarihi bilgileri</li>
-        <li>Bütçe hedefleri ve kategori limitleri</li>
-        <li>Tema, bildirim ve güvenlik tercihleri</li>
-        <li>Kullanıcı etkinleştirirse PIN ayarı</li>
-      </ul>
-      <p>Bu veriler varsayılan olarak cihazda yerel olarak saklanır. AIgrodeve, kullanıcının yerel finans kayıtlarını kendi sunucularında toplamaz.</p>
-    </section>
+    <h2>Veri Sorumlusu</h2>
+    <div class="info">
+      <p><strong>Uygulama sahibi/geliştirici:</strong> AIgrodeve</p>
+      <p><strong>İletişim e-postası:</strong> <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a></p>
+      <p><strong>Gizlilik politikası URL'si:</strong> <a href="https://aigrodeve.github.io/baget/">https://aigrodeve.github.io/baget/</a></p>
+    </div>
 
-    <section>
-      <h2>Google Drive Yedekleme</h2>
-      <p>Premium kullanıcılar isterse Google hesabıyla oturum açarak verilerini kendi Google Drive hesaplarına yedekleyebilir.</p>
-      <p>Bu özellik kullanıldığında:</p>
-      <ul>
-        <li>Google hesabı adı veya e-posta bilgisi yalnızca oturum durumunu göstermek ve yedekleme işlemini yürütmek için kullanılır.</li>
-        <li>Yedek dosyası kullanıcının Google Drive hesabındaki <code>Baget</code> klasörüne kaydedilir.</li>
-        <li>Her Baget profili için ayrı yedek dosyası oluşturulur.</li>
-        <li>Baget yalnızca uygulama tarafından oluşturulan veya yönetilen Drive dosyalarına erişim ister.</li>
-        <li>Yedekler kullanıcının kendi Google Drive hesabında saklanır ve Google'ın hizmet şartları/gizlilik politikası kapsamında işlenebilir.</li>
-      </ul>
-      <p>Google Drive yedekleme isteğe bağlıdır. Kullanıcı yedek dosyalarını Google Drive üzerinden silebilir.</p>
-    </section>
+    <h2>Toplanan ve İşlenen Veriler</h2>
+    <p>Baget, kullanıcı tarafından girilen finansal kayıtları işler:</p>
+    <ul>
+      <li>Gelir ve gider kayıtları</li>
+      <li>Tutar, kategori, açıklama ve tarih bilgileri</li>
+      <li>Bütçe limitleri</li>
+      <li>Kredi/taksit planları</li>
+      <li>Ödeme hatırlatıcıları</li>
+      <li>CSV/Excel içe aktarma geçmişi</li>
+      <li>Kullanıcının isteğe bağlı olarak eklediği fiş, fatura veya belge dosyaları</li>
+    </ul>
 
-    <section>
-      <h2>Reklamlar</h2>
-      <p>Ücretsiz sürümde Google AdMob reklamları gösterilir. Google AdMob; reklam göstermek, reklam performansını ölçmek, sahtekarlığı ve kötüye kullanımı önlemek için cihaz bilgileri, reklam tanımlayıcıları, kullanım verileri ve benzeri teknik verileri işleyebilir.</p>
-      <p>Premium satın alındığında uygulama içi reklamlar kaldırılır.</p>
-    </section>
+    <p>Hesaplı kullanım tercih edildiğinde aşağıdaki hesap verileri işlenebilir:</p>
+    <ul>
+      <li>E-posta adresi</li>
+      <li>Kullanıcı adı/görünen ad</li>
+      <li>Firebase kullanıcı kimliği</li>
+      <li>E-posta doğrulama durumu</li>
+    </ul>
 
-    <section>
-      <h2>Satın Alma İşlemleri</h2>
-      <p>Premium tek seferlik satın alma işlemleri Google Play Billing üzerinden yürütülür. Baget ödeme kartı bilgilerini toplamaz veya saklamaz. Satın alma durumu, Premium özellikleri etkinleştirmek ve satın alımı geri yüklemek için kullanılır.</p>
-    </section>
+    <p>Uygulama bildirim gönderebilmek için cihazın bildirim iznini kullanabilir.</p>
+    <p>Ücretsiz sürümde reklam gösterimi için Google Mobile Ads / AdMob kullanılabilir. Reklam hizmetleri; reklam tanımlayıcısı, cihaz bilgileri, IP adresinden türetilebilen yaklaşık konum, uygulama etkileşimleri, reklam gösterim ve tıklama bilgileri gibi verileri işleyebilir. Premium sürümde reklamlar kaldırılabilir.</p>
 
-    <section>
-      <h2>Bildirimler</h2>
-      <p>Baget, kullanıcı izin verirse aşağıdaki bildirimleri gönderebilir:</p>
-      <ul>
-        <li>Son ödeme tarihi hatırlatmaları</li>
-        <li>Uygulamayı Google Play üzerinde puanlama hatırlatmaları</li>
-      </ul>
-      <p>Bildirimler uygulama işlevleri ve kullanıcı hatırlatmaları için kullanılır.</p>
-    </section>
+    <h2>Verilerin Kullanım Amaçları</h2>
+    <p>Veriler şu amaçlarla kullanılır:</p>
+    <ul>
+      <li>Gelir, gider ve bütçe takibini sağlamak</li>
+      <li>Analiz, özet ve raporlar oluşturmak</li>
+      <li>Ödeme hatırlatıcıları göndermek</li>
+      <li>Kullanıcının cihazları arasında desteklenen kayıtları eşitlemek</li>
+      <li>Hesap oluşturma, giriş yapma ve hesap silme işlemlerini yürütmek</li>
+      <li>Uygulama içi satın alma ile Premium erişimi yönetmek</li>
+      <li>Reklam göstermek, reklam performansını ölçmek ve reklam kötüye kullanımını önlemek</li>
+    </ul>
 
-    <section>
-      <h2>Verilerin Paylaşılması</h2>
-      <p>Baget, kullanıcının yerel finans kayıtlarını üçüncü taraflara satmaz.</p>
-      <p>Ancak aşağıdaki üçüncü taraf hizmetleri kullanılabilir:</p>
-      <ul>
-        <li>Google AdMob: ücretsiz sürümde reklam göstermek için</li>
-        <li>Google Play Billing: Premium satın alma işlemleri için</li>
-        <li>Google Sign-In ve Google Drive: kullanıcı isteğe bağlı yedekleme kullanırsa</li>
-      </ul>
-      <p>Bu hizmetlerin kendi veri işleme uygulamaları olabilir.</p>
-    </section>
+    <h2>Yerel Saklama ve Bulut Eşitleme</h2>
+    <p>Baget yerel kullanım modunda verileri cihazda saklar. Kullanıcı hesap oluşturur ve Premium bulut eşitleme özelliğini kullanırsa desteklenen finansal kayıtlar Firebase altyapısı üzerinden bulutta saklanabilir.</p>
+    <p>Fiş/fatura görselleri ve belge dosyaları uygulamanın mevcut sürümünde ağırlıklı olarak cihazda saklanır. Bulut yedekleme özelliği Premium kapsamda açıldığında bu dosyalar Firebase Storage üzerinde kullanıcı hesabına özel alanda saklanabilir.</p>
 
-    <section>
-      <h2>Veri Saklama ve Silme</h2>
-      <p>Kullanıcı uygulama içindeki profilleri ve kayıtları silebilir. Uygulama cihazdan kaldırıldığında yerel uygulama verileri cihazdan silinir.</p>
-      <p>Google Drive yedekleri kullanıcının kendi Drive hesabında saklanır. Kullanıcı bu dosyaları Google Drive üzerinden silebilir.</p>
-    </section>
+    <h2>Üçüncü Taraf Hizmetler</h2>
+    <p>Baget aşağıdaki üçüncü taraf hizmetleri kullanabilir:</p>
+    <ul>
+      <li>Firebase Authentication: kullanıcı hesabı oluşturma ve giriş işlemleri</li>
+      <li>Cloud Firestore: finansal kayıtların bulut eşitlemesi</li>
+      <li>Firebase Storage: kullanıcıya ait dosya/fiş yedekleme</li>
+      <li>Google Play Billing / App Store In-App Purchase: Premium satın alma ve abonelik işlemleri</li>
+      <li>Google Mobile Ads / AdMob: ücretsiz sürümde reklam gösterimi, reklam ölçümü ve kötüye kullanım önleme</li>
+    </ul>
+    <p>Bu hizmetler kendi gizlilik politikalarına ve güvenlik uygulamalarına tabidir.</p>
 
-    <section>
-      <h2>Güvenlik</h2>
-      <p>Baget verileri cihaz üzerinde saklar. Kullanıcı isterse PIN kilidi etkinleştirebilir. Google Drive yedekleme için Google hesabı yetkilendirmesi kullanılır. Google servisleriyle yapılan bağlantılar ilgili SDK'lar üzerinden güvenli bağlantılarla yürütülür.</p>
-    </section>
+    <h2>Veri Paylaşımı</h2>
+    <p>Baget, kullanıcı verilerini satmaz. Veriler yalnızca uygulamanın temel işlevlerini sağlamak, bulut eşitleme yapmak, satın alma durumunu yönetmek, reklam göstermek ve yasal yükümlülüklere uymak için gerekli hizmet sağlayıcılarla işlenir.</p>
+    <p>Finansal kayıtlar reklam hedefleme amacıyla uygulama tarafından satılmaz veya manuel olarak reklam ağlarıyla paylaşılmaz. Reklam hizmetleri kendi SDK'ları aracılığıyla reklam tanımlayıcısı ve reklam etkileşim verileri gibi teknik verileri işleyebilir.</p>
 
-    <section>
-      <h2>Çocukların Gizliliği</h2>
-      <p>Baget çocuklara yönelik bir uygulama olarak tasarlanmamıştır.</p>
-    </section>
+    <h2>Veri Güvenliği</h2>
+    <p>Kullanıcı verileri, hesaplı kullanımda kullanıcı kimliğine göre ayrılmış Firebase koleksiyonlarında saklanır. Firestore ve Storage kuralları, kullanıcının yalnızca kendi verilerine erişmesine izin verecek şekilde yapılandırılmıştır. Yerel cihaz verilerinin güvenliği cihaz işletim sistemi ve kullanıcının cihaz güvenliği ayarlarına da bağlıdır.</p>
 
-    <section>
-      <h2>Değişiklikler</h2>
-      <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama veya mağaza sayfası üzerinden duyurulabilir.</p>
-      <p class="note">Gizlilik politikası hakkında sorularınız için <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a> adresinden AIgrodeve ile iletişime geçebilirsiniz.</p>
-    </section>
+    <h2>Hesap Silme ve Veri Silme</h2>
+    <p>Kullanıcı uygulama içinden hesabını silebilir. Hesap silme işlemi yeniden kimlik doğrulama ister ve bulut verilerinin silinmesini başlatır. Kullanıcı yerel verilerini silmeyi veya yerel kullanım alanına taşımayı seçebilir.</p>
 
-    <footer>
-      © 2026 AIgrodeve. Baget mobil uygulaması gizlilik politikası.
-    </footer>
+    <h2>Çocukların Gizliliği</h2>
+    <p>Baget çocuklara yönelik bir uygulama değildir. Uygulama, çocuklardan bilerek kişisel veri toplamaz.</p>
+
+    <h2>Kullanıcı Hakları</h2>
+    <p>Kullanıcılar aşağıdaki konularda iletişime geçebilir:</p>
+    <ul>
+      <li>Verilerinin silinmesini isteme</li>
+      <li>Hesap silme konusunda destek alma</li>
+      <li>Gizlilik politikası hakkında bilgi isteme</li>
+      <li>Hatalı hesap/veri işlemlerinin düzeltilmesini isteme</li>
+    </ul>
+    <p>İletişim: <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a></p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama veya mağaza sayfası üzerinden duyurulabilir.</p>
   </main>
 </body>
 </html>
