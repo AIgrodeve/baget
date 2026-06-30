@@ -10,7 +10,7 @@
       --text: #1f2933;
       --muted: #5f6b7a;
       --border: #e5e7eb;
-      --accent: #2563eb;
+      --accent: #0f766e;
       --background: #ffffff;
       --surface: #f8fafc;
     }
@@ -91,7 +91,7 @@
   <main>
     <header>
       <h1>Baget Gizlilik Politikası</h1>
-      <p class="meta">Son güncelleme: 28 Haziran 2026</p>
+      <p class="meta">Son güncelleme: 30 Haziran 2026</p>
     </header>
 
     <p>Bu gizlilik politikası, Baget mobil uygulamasının hangi verileri işlediğini, bu verileri hangi amaçlarla kullandığını ve kullanıcıların hangi haklara sahip olduğunu açıklar.</p>
@@ -112,19 +112,24 @@
       <li>Kredi/taksit planları</li>
       <li>Ödeme hatırlatıcıları</li>
       <li>CSV/Excel içe aktarma geçmişi</li>
-      <li>Kullanıcının isteğe bağlı olarak eklediği fiş, fatura veya belge dosyaları</li>
+      <li>Kullanıcının isteğe bağlı olarak eklediği fiş, fatura, fotoğraf veya belge dosyaları</li>
     </ul>
 
     <p>Hesaplı kullanım tercih edildiğinde aşağıdaki hesap verileri işlenebilir:</p>
     <ul>
       <li>E-posta adresi</li>
-      <li>Kullanıcı adı/görünen ad</li>
+      <li>Kullanıcı adı veya görünen ad</li>
       <li>Firebase kullanıcı kimliği</li>
       <li>E-posta doğrulama durumu</li>
     </ul>
 
-    <p>Uygulama bildirim gönderebilmek için cihazın bildirim iznini kullanabilir.</p>
+    <p>Uygulama, ödeme hatırlatıcısı gönderebilmek için cihazın bildirim iznini kullanabilir.</p>
+
     <p>Ücretsiz sürümde reklam gösterimi için Google Mobile Ads / AdMob kullanılabilir. Reklam hizmetleri; reklam tanımlayıcısı, cihaz bilgileri, IP adresinden türetilebilen yaklaşık konum, uygulama etkileşimleri, reklam gösterim ve tıklama bilgileri gibi verileri işleyebilir. Premium sürümde reklamlar kaldırılabilir.</p>
+
+    <p>Uygulamanın kararlılığını ve hatalarını izlemek için Firebase Crashlytics kullanılabilir. Crashlytics; kilitlenme günlükleri, hata izleri, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, Crashlytics kurulum kimliği, Firebase installation ID ve benzeri teknik teşhis verilerini işleyebilir.</p>
+
+    <p>Uygulama ayarlarını uzaktan yönetmek ve bazı yapılandırmaları güncellemek için Firebase Remote Config kullanılabilir. Remote Config, yapılandırma değerlerini sunmak için Firebase installation ID gibi teknik tanımlayıcıları işleyebilir.</p>
 
     <h2>Verilerin Kullanım Amaçları</h2>
     <p>Veriler şu amaçlarla kullanılır:</p>
@@ -136,6 +141,8 @@
       <li>Hesap oluşturma, giriş yapma ve hesap silme işlemlerini yürütmek</li>
       <li>Uygulama içi satın alma ile Premium erişimi yönetmek</li>
       <li>Reklam göstermek, reklam performansını ölçmek ve reklam kötüye kullanımını önlemek</li>
+      <li>Çökme raporlarını inceleyerek hata gidermek ve uygulama performansını iyileştirmek</li>
+      <li>Uygulama yapılandırmasını güvenli ve kontrollü şekilde yönetmek</li>
     </ul>
 
     <h2>Yerel Saklama ve Bulut Eşitleme</h2>
@@ -147,21 +154,25 @@
     <ul>
       <li>Firebase Authentication: kullanıcı hesabı oluşturma ve giriş işlemleri</li>
       <li>Cloud Firestore: finansal kayıtların bulut eşitlemesi</li>
-      <li>Firebase Storage: kullanıcıya ait dosya/fiş yedekleme</li>
+      <li>Firebase Storage: kullanıcıya ait dosya veya fiş yedekleme</li>
+      <li>Firebase Crashlytics: kilitlenme günlükleri, hata raporları ve teşhis verileri</li>
+      <li>Firebase Remote Config: uygulama yapılandırmasının uzaktan yönetimi</li>
       <li>Google Play Billing / App Store In-App Purchase: Premium satın alma ve abonelik işlemleri</li>
       <li>Google Mobile Ads / AdMob: ücretsiz sürümde reklam gösterimi, reklam ölçümü ve kötüye kullanım önleme</li>
     </ul>
     <p>Bu hizmetler kendi gizlilik politikalarına ve güvenlik uygulamalarına tabidir.</p>
 
     <h2>Veri Paylaşımı</h2>
-    <p>Baget, kullanıcı verilerini satmaz. Veriler yalnızca uygulamanın temel işlevlerini sağlamak, bulut eşitleme yapmak, satın alma durumunu yönetmek, reklam göstermek ve yasal yükümlülüklere uymak için gerekli hizmet sağlayıcılarla işlenir.</p>
+    <p>Baget, kullanıcı verilerini satmaz. Veriler yalnızca uygulamanın temel işlevlerini sağlamak, bulut eşitleme yapmak, satın alma durumunu yönetmek, reklam göstermek, çökme ve performans sorunlarını analiz etmek, uzaktan yapılandırma sağlamak ve yasal yükümlülüklere uymak için gerekli hizmet sağlayıcılarla işlenir.</p>
     <p>Finansal kayıtlar reklam hedefleme amacıyla uygulama tarafından satılmaz veya manuel olarak reklam ağlarıyla paylaşılmaz. Reklam hizmetleri kendi SDK'ları aracılığıyla reklam tanımlayıcısı ve reklam etkileşim verileri gibi teknik verileri işleyebilir.</p>
 
     <h2>Veri Güvenliği</h2>
     <p>Kullanıcı verileri, hesaplı kullanımda kullanıcı kimliğine göre ayrılmış Firebase koleksiyonlarında saklanır. Firestore ve Storage kuralları, kullanıcının yalnızca kendi verilerine erişmesine izin verecek şekilde yapılandırılmıştır. Yerel cihaz verilerinin güvenliği cihaz işletim sistemi ve kullanıcının cihaz güvenliği ayarlarına da bağlıdır.</p>
+    <p>Aktarım sırasında desteklenen bağlantılar şifreli iletişim üzerinden yapılır. Uygulama, hata ve teşhis verilerini uygulama kararlılığını artırmak amacıyla işler.</p>
 
     <h2>Hesap Silme ve Veri Silme</h2>
     <p>Kullanıcı uygulama içinden hesabını silebilir. Hesap silme işlemi yeniden kimlik doğrulama ister ve bulut verilerinin silinmesini başlatır. Kullanıcı yerel verilerini silmeyi veya yerel kullanım alanına taşımayı seçebilir.</p>
+    <p>Kullanıcılar hesaplarını silmeden verilerinin bir kısmının veya tamamının silinmesini talep etmek için <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a> adresinden iletişime geçebilir.</p>
 
     <h2>Çocukların Gizliliği</h2>
     <p>Baget çocuklara yönelik bir uygulama değildir. Uygulama, çocuklardan bilerek kişisel veri toplamaz.</p>
@@ -172,7 +183,7 @@
       <li>Verilerinin silinmesini isteme</li>
       <li>Hesap silme konusunda destek alma</li>
       <li>Gizlilik politikası hakkında bilgi isteme</li>
-      <li>Hatalı hesap/veri işlemlerinin düzeltilmesini isteme</li>
+      <li>Hatalı hesap veya veri işlemlerinin düzeltilmesini isteme</li>
     </ul>
     <p>İletişim: <a href="mailto:aigrodeve@gmail.com">aigrodeve@gmail.com</a></p>
 
